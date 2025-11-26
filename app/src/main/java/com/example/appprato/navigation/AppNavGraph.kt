@@ -22,7 +22,6 @@ import com.example.appprato.ui.perfil.ConfiguracoesScreen
 import com.example.appprato.ui.perfil.GerenciarPerfilScreen
 import com.example.appprato.ui.perfil.PerfilScreen
 
-// Sealed class for type-safe navigation
 sealed class AppScreen(val route: String) {
     object Login : AppScreen("login")
     object Cadastro : AppScreen("cadastro")
@@ -62,7 +61,7 @@ fun AppNavGraph(
         startDestination = startDestination,
         modifier = modifier
     ) {
-        composable("loading") { /* Tela de carregamento, se desejado */ }
+        composable("loading") { /* Tela de carregamento */ }
         composable(AppScreen.Login.route) {
             LoginScreen(navController = navController)
         }

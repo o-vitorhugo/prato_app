@@ -28,14 +28,14 @@ class AuthRepositoryImpl @Inject constructor(
         val authResult = firebaseAuth.createUserWithEmailAndPassword(email, password).await()
         val user = authResult.user ?: throw IllegalStateException("User not created")
 
-        // 1. Atualiza o perfil de autenticação do Firebase
+        // Atualiza o perfil de autenticação do Firebase
         val profileUpdates = userProfileChangeRequest {
             displayName = name
             photoUri = Uri.parse(defaultPhotoUrl)
         }
         user.updateProfile(profileUpdates).await()
 
-        // 2. Cria o documento do usuário no Firestore
+        // Cria o documento do usuário no Firestore
         val newUser = User(
             uid = user.uid,
             name = name,

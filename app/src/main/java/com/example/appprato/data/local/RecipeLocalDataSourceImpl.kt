@@ -20,7 +20,7 @@ class RecipeLocalDataSourceImpl @Inject constructor(
         return recipeDao.getFavoriteRecipes()
     }
 
-    override suspend fun insertRecipe(recipe: RecipeEntity) { // <-- Implementado
+    override suspend fun insertRecipe(recipe: RecipeEntity) {
         recipeDao.insertRecipe(recipe)
     }
 

@@ -34,13 +34,11 @@ class MainActivity : ComponentActivity() {
             AppPratoTheme(darkTheme = isDarkMode) {
                 Scaffold(
                     bottomBar = {
-                        // A lógica para mostrar/esconder a barra de navegação é puramente de UI
                         if (shouldShowBottomBar(navController)) {
                             BottomNavBar(navController = navController)
                         }
                     }
                 ) { paddingValues ->
-                    // O AppNavGraph será limpo a seguir para remover toda a lógica
                     AppNavGraph(
                         navController = navController,
                         isDarkMode = isDarkMode,
@@ -56,7 +54,6 @@ class MainActivity : ComponentActivity() {
 @Composable
 private fun shouldShowBottomBar(navController: NavController): Boolean {
     val navBackStackEntry by navController.currentBackStackEntryAsState()
-    // A rota atual é usada para decidir se a barra inferior deve ser mostrada. Isso é lógica de UI.
     val currentRoute = navBackStackEntry?.destination?.route
     return when (currentRoute) {
         AppScreen.Home.route,

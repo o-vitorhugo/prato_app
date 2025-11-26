@@ -3,10 +3,6 @@ package com.example.appprato.domain.repository
 import com.example.appprato.data.local.RecipeEntity
 import kotlinx.coroutines.flow.Flow
 
-/**
- * Interface do repositório (zerada).
- * A lógica será reconstruída passo a passo.
- */
 interface MainRepository {
 
     suspend fun refreshRecipes()

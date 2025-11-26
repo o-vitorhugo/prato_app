@@ -22,7 +22,7 @@ class NotificationsRepositoryImpl @Inject constructor(
             }
     }
 
-    override suspend fun createNotification(notification: Notification) { // <-- CORREÇÃO APLICADA AQUI
+    override suspend fun createNotification(notification: Notification) {
         firestore.collection("notifications").document(notification.id).set(notification)
     }
 }

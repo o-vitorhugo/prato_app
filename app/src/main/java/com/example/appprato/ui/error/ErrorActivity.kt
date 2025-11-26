@@ -24,7 +24,7 @@ class ErrorActivity : ComponentActivity() {
             Box(
                 modifier = Modifier
                     .fillMaxSize()
-                    .background(Color(0xFF800000)) // Vermelho escuro
+                    .background(Color(0xFF800000))
                     .padding(16.dp)
             ) {
                 Text(
