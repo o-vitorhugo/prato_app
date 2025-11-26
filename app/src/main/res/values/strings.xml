@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AppPrato</string>
+    <string name="minhas_receitas_title">Minhas Receitas</string>
+    <string name="add_recipe_button_description">Adicionar nova receita</string>
+    <string name="no_recipes_message">Nenhuma receita por aqui.</string>
+    <string name="suggestion_dialog_title">Sugestão de Substituição</string>
+    <string name="ok">OK</string>
+    <string name="back_content_description">Voltar</string>
+    <string name="notifications_content_description">Notificações</string>
+    <string name="edit_recipe_content_description">Editar Receita</string>
+    <string name="favorite_content_description">Favoritar</string>
+    <string name="recipe_not_found">Receita não encontrada.</string>
+    <string name="ingredients_tab">Ingredientes</string>
+    <string name="preparation_tab">Modo de Preparo</string>
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "280167569188",
+    "project_id": "app-prato-4b77b",
+    "storage_bucket": "app-prato-4b77b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280167569188:android:54679f9be8092f4eb585b1",
+        "android_client_info": {
+          "package_name": "com.example.appprato"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCzIpM1ePXZSArRTENeWUVwtGfZOARx60"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
